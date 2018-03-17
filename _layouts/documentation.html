@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div id="root">
+      <div class="wrapper">
+        <div class="header">
+          <h1>OBMIN - {{ page.title | escape }}</h1>
+          
+        </div>
+        <div class="container">
+
+          <div class="content">
+            {{ content }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+    <script src="{{ "/assets/highlight.min.js" | relative_url }}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">
+      window.onload = function () {
+        var routes = document.querySelector('.routes')
+        var menuIcon = document.querySelector('.menu-icon')
+        menuIcon.addEventListener("click", function(e) {
+          e.preventDefault()
+          routes.classList.toggle('open')
+        });
+      };
+    </script>
+  </body>
+</html>

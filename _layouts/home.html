@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div id="root">
+      <div class="wrapper">
+        <div class="header">
+          <h1>OBMIN - {{ page.title | escape }}</h1>
+          <img src="{{ "/assets/images/screencast.png" | relative_url }}"  style="max-width:100%;max-height:37vh;width:auto;height:auto;"></img>
+        </div>
+        <div class="container">
+
+          <div class="content">
+            <div class="center">
+              <div class="col3">
+                <a href="{{ "/about" | relative_url }}"><h2>Easy to use</h2></a>
+                <p>Just <b>one click</b> to begin a serving pages after a trivial installation. User-oriented graphical tools allow you to control all processes.
+                  <a href="{{ "/about" | relative_url }}"> ...</a>
+                </p>
+              </div>
+              <div class="col3">
+                <a href="{{ "/about" | relative_url }}"><h2>Open Source</h2></a>
+                <p>GNU General Public License (GPL3) - <b>Free as Freedom</b>. It gives a guaranty of your privacy and allows you to share, use and modify it for free.
+                  <a href="{{ "/about" | relative_url }}"> ...</a>
+              </p>
+              </div>
+              <div class="col3">
+                <a href="{{ "/about" | relative_url }}"><h2>Privacy</h2></a>
+                <p>Personal data, server, <b>own rules and rights</b>. Any public online service or cloud couldn't give you the same level of the privacy.
+                  <a href="{{ "/about" | relative_url }}"> ...</a>
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              <p><big>"Get complex top high-level technologies to everyone is a main goal of the project."</big></p>
+              <span style="float:right;margin-right:12%">Project's Author<span>
+            </div>
+            <div class="center">
+              <h2>Make Things Easier</h2>
+              <div style="width:90%;margin:auto"><div class="tube"><iframe src="https://www.youtube.com/embed/mSj8b1x7_bw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div><p/>
+            </div>
+            <h2 class="center"><p>User Reviews</p></h2>
+            <div class="center">
+              <div class="col3">
+                <b>jonius</b><br>
+                <p>"Easy to use and very pratically! Makes it easy to transfer huge files to others..."</p>
+              </div>
+              <div class="col3">
+                <b>kyle_peng</b><br>
+                <p>"Very awesome tool."</p>
+              </div>
+              <div class="col3">
+                <b>wstarcev</b><br>
+                <p>"Useful extension."</p>
+              </div>
+            </div>
+            <div class="center">
+              <br><p><big>"The investment of your donations and time in private services may save our future and the future of our children. Today, corporations fighting to get all possible from you: data, metadata, your profile with connections to all around you without any guarantee when you're pressing 'Agreement' buttons."</big></p>
+            </div>
+            {{ content }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+    <script src="{{ "/assets/highlight.min.js" | relative_url }}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">
+      window.onload = function () {
+        var routes = document.querySelector('.routes')
+        var menuIcon = document.querySelector('.menu-icon')
+        menuIcon.addEventListener("click", function(e) {
+          e.preventDefault()
+          routes.classList.toggle('open')
+        });
+      };
+    </script>
+  </body>
+</html>

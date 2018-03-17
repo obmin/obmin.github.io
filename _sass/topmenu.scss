@@ -1,0 +1,81 @@
+@import 'variables';
+
+.topmenu{
+  width: 100%;
+  background-color: #222429;
+
+  .mainmenu {
+    width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    display: table;
+    @media(max-width: 880px) {
+      margin-left: 5px;
+      width: 95%;
+    }
+  }
+  .menu-icon {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    padding: 15px;
+    display: none;
+    z-index: 100;
+    @media(max-width: 880px) {
+      display: block !important;
+    }
+  }
+  .logo {
+    padding: 10px 24px;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    &:hover {
+      -webkit-filter: brightness(1.4);
+      filter: brightness(1.4);
+    }
+  }
+  .routes {
+    padding: 10px 0;
+    display: inline-block;
+    width: 90%;
+    list-style: none;
+    @media(max-width: 880px) {
+      width: 100%;
+      display: none;
+    }
+    &.open {
+      display: inline-block !important;
+    }
+    li {
+      display: inline-block;
+      a {
+        display: block;
+        padding: 12px 20px;
+        font-size: 17px;
+        color: #c3c3c3;
+        &.active {
+          color: $dark-orange;
+        }
+      }
+      &:hover {
+        & > a {
+          color: #fcfcfc;
+          & > svg {
+            fill:  #fcfcfc;
+          }
+        }
+      }
+      &:last-child {
+        width: auto;
+        display: block;
+        text-align: right;
+        float: right;
+        @media(max-width: 880px) {
+          position: relative;
+        }
+      }
+    }
+  }
+}

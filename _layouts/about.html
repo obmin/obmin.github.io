@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div id="root">
+      <div class="wrapper">
+        <div class="header">
+          <h1>OBMIN - {{ page.title | escape }}</h1>
+
+        </div>
+        <div class="container">
+          <div id="navbar" class="menuabout">
+            <ul class="routes">
+              <li><a href="{{ "about#connectivity" | relative_url }}" {% if active[1] == '#connectivity' %}class="active"{% endif %}>
+                <img src="{{ "/assets/icons/chain.png" | relative_url }}" alt="" class="menu-icon"><br></img>
+                Connectivity
+              </a></li>
+              <li><a href="{{ "about#privacy" | relative_url }}" {% if active[1] == 'privacy' %}class="active"{% endif %}>
+                <img src="{{ "/assets/icons/private.png" | relative_url }}" alt="" class="menu-icon"><br></img>
+                Privacy
+              </a></li>
+              <li><a href="{{ "about#privacy" | relative_url }}" {% if active[1] == 'privacy' %}class="active"{% endif %}>
+                <img src="{{ "/assets/icons/lock.png" | relative_url }}" alt="" class="menu-icon"><br></img>
+                Secure
+              </a></li>
+              <li><a href="{{ "about#privacy" | relative_url }}" {% if active[1] == 'privacy' %}class="active"{% endif %}>
+                <img src="{{ "/assets/icons/easy.png" | relative_url }}" alt="" class="menu-icon"><br></img>
+                Friendly
+              </a></li>
+              <li><a href="{{ "about#privacy" | relative_url }}" {% if active[1] == 'privacy' %}class="active"{% endif %}>
+                <img src="{{ "/assets/icons/rocket.png" | relative_url }}" alt="" class="menu-icon"><br></img>
+                Speed
+              </a></li>
+              <li><a href="{{ "about#extensibility" | relative_url }}" {% if active[1] == 'extensibility' %}class="active"{% endif %}>
+                <img src="{{ "/assets/icons/puzzle.png" | relative_url }}" alt="" class="menu-icon"><br></img>
+                Extensibility
+              </a></li>
+              <li><a href="{{ "about#extensibility" | relative_url }}" {% if active[1] == 'extensibility' %}class="active"{% endif %}>
+                <img src="{{ "/assets/icons/style.png" | relative_url }}" alt="" class="menu-icon"><br></img>
+                Customization
+              </a></li>
+            </ul>
+          </div>
+
+          <div class="content">
+            {{ content }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+    <script src="{{ "/assets/highlight.min.js" | relative_url }}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">
+      var baroff = document.getElementById("navbar").offsetTop;
+      window.onload = function () {
+        var routes = document.querySelector('.routes')
+        var menuIcon = document.querySelector('.menu-icon')
+        menuIcon.addEventListener("click", function(e) {
+          e.preventDefault()
+          routes.classList.toggle('open')
+        });
+      };
+      window.onscroll = function() {
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        console.log (JSON.parse(JSON.stringify(window.pageYOffset + " >= " + sticky)));
+        if (sticky == 0) sticky += baroff;
+        if (window.pageYOffset > sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      };
+    </script>
+  </body>
+</html>

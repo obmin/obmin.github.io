@@ -1,0 +1,23 @@
+{% assign active = page.url | downcase | split: '/' %}
+
+<div class="topmenu">
+  <div class="mainmenu">
+  <div class="logo"><a href="{{ "/" | relative_url }}"><img alt="OBMIN" src="{{ "/assets/images/logo.png" | relative_url }}" title="OBMIN"></img></a></div>
+
+  <ul class="routes">
+    <li><a href="{{ "/about" | relative_url }}" {% if active[1] == 'about' %}class="active"{% endif %}>Features</a></li>
+    <li><a href="{{ "/explore" | relative_url }}" {% if active[1] == 'explore' %}class="active"{% endif %}>Explore</a></li>
+    <li><a href="{{ "/documentation" | relative_url }}" {% if active[1] == 'documentation' %}class="active"{% endif %}>Documentation</a></li>
+    <li><a href="{{ "/resources" | relative_url }}" {% if active[1] == 'resources' %}class="active"{% endif %}>Resources</a></li>
+    <li><a href="{{ "/feed.xml" | relative_url }}" title="RSS Feed"><svg class="svg-icon" id="rss" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M12.8 16C12.8 8.978 7.022 3.2 0 3.2V0c8.777 0 16 7.223 16 16h-3.2zM2.194 11.61c1.21 0 2.195.985 2.195 2.196 0 1.21-.99 2.194-2.2 2.194C.98 16 0 15.017 0 13.806c0-1.21.983-2.195 2.194-2.195zM10.606 16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"/></svg></a></li>
+  </ul>
+
+  <span class="menu-icon">
+    <svg viewBox="0 0 18 15" width="24px" height="20px">
+      <path fill="#fff" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+      <path fill="#fff" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+      <path fill="#fff" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+    </svg>
+  </span>
+</div>
+</div>

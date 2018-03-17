@@ -1,0 +1,38 @@
+title: OBMIN
+description: OBMIN Server Website.
+
+collections:
+  blog:
+    permalink: /blog/:path/
+    output: true
+  docs:
+    permalink: /docs/:path/
+    output: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+
+baseurl: "/obmin"
+github_username:  konkor
+rss: rss
+
+exclude:
+- ".gitignore"
+- CNAME
+- icomoon-selection.json
+- README.md
