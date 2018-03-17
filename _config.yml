@@ -27,7 +27,7 @@ defaults:
     values:
       layout: "page"
 
-baseurl: "/obmin"
+baseurl: "/"
 github_username:  konkor
 rss: rss
 
