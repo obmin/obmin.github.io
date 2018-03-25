@@ -1,5 +1,7 @@
+*~
 _site
 .sass-cache
+art
 .jekyll-metadata
 /.bundle/
 /Gemfile.lock
