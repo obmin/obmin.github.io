@@ -66,6 +66,12 @@ a:hover {
   }
 }
 
+.container_docs {
+  margin-left: $sidebar-width;
+  @media(max-width: 768px) {
+    margin: auto;
+  }
+}
 .splitter {
   height: 1px;
   width: 100%;

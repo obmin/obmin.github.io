@@ -2,7 +2,7 @@
 title: Project Documentation
 permalink: /documentation/
 description: Here are resources to help you to get more detailed information about project's functionality, user interfaces, and developer's documentation.
-layout: default
+layout: documentation
 ---
 
 # User Help documentation

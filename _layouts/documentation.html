@@ -2,23 +2,23 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    {% include header.html %}
     <div id="root">
       <div class="wrapper">
-        <div class="header">
-          <h1>OBMIN - {{ page.title | escape }}</h1>
-          
-        </div>
-        <div class="container">
 
+        {% include sidebar.html %}
+
+
+        <div class="container_docs">
           <div class="content">
+			<div>
+  			  <h1>{{ page.title | escape }}</h1>
+  			</div>
             {{ content }}
           </div>
 
         </div>
       </div>
     </div>
-    {% include footer.html %}
     <script src="{{ "/assets/highlight.min.js" | relative_url }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript">
