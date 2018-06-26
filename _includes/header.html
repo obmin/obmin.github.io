@@ -6,6 +6,7 @@
 
   <ul class="routes">
     <li><a href="{{ "/about" | relative_url }}" {% if active[1] == 'about' %}class="active"{% endif %}>Features</a></li>
+	<li><a href="{{ "/blog" | relative_url }}" {% if active[1] == 'blog' %}class="active"{% endif %}>Articles</a></li>
     <li><a href="{{ "/explore" | relative_url }}" {% if active[1] == 'explore' %}class="active"{% endif %}>Explore</a></li>
     <li><a href="{{ "/documentation" | relative_url }}" {% if active[1] == 'documentation' %}class="active"{% endif %}>Documentation</a></li>
     <li><a href="{{ "/resources" | relative_url }}" {% if active[1] == 'resources' %}class="active"{% endif %}>Resources</a></li>

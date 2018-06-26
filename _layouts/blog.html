@@ -3,18 +3,14 @@ layout: default
 ---
 <section class="post">
 
-  {% if page.description %}
-    <p class="description">{{ page.description }}</p>
-  {% endif %}
-
-  <br>
   <ul class="post-list">
     {% for doc in site.posts %}
       <li>
-        <span class="post-meta">{{ doc.date | date_to_long_string }}</span>
+
         <a href="{{ doc.url | relative_url }}">
           <h3 class="post-title">{{ doc.title }}</h3>
         </a>
+		<div class="post-meta"> <b> {{ doc.author | "konkor" }} </b> Updated {{ doc.date | date_to_long_string }}</div>
         {% if doc.image %}
           <img alt="" src="{{ doc.image | relative_url }}" align="left" style="max-width:100%;max-height:160px;width:auto;height:auto;display:inline-block;margin:0 32px 0 0">
         {% endif %}
@@ -27,5 +23,9 @@ layout: default
   <div class="post-content">
     {{ content }}
   </div>
+
+  {% if page.description %}
+    <p class="description">{{ page.description }}</p>
+  {% endif %}
 
 </section>
