@@ -67,8 +67,60 @@ chmod +x install_obmin.sh
 **After some installation methods, you have to [restart Gnome Shell](#restarting-gnome-shell) and enable it via [managing tools](#managing-extensions)**
 
 ## Debian package
+<p class="description">You can use the deb package on other Linux distributions like Fedora, Solus, Manjaro, etc. You will get the same functionality except for you have to install required dependencies and updating/uninstalling manually without help from a package manager. <b>The project open to your contributions and you could bring up supporting of your OS</b></p>
+
+There is a pre-compiled deb package for Debian/Ubuntu flavors. It is a full version of the application and includes global bins for all components, MAN pages, icons, desktop shortcuts so. The deb will help you to install all dependencies, application components and desktop applets system widely. You can find it [here](https://github.com/konkor/obmin/tree/master/releases). You can use a terminal or GDebi, Software Center to install it.
+### Debian/Ubuntu flavors
+```sh
+# Open root terminal
+sudo su
+# Update repositories
+apt-get update
+# Install the deb package
+dpkg -i obmin_latest_all.deb
+# Install dependencies
+apt-get -f install
+# Close root terminal
+exit
+```
+### Non-Debian based distributions
+```sh
+# Solus OS Badgie installation
+# Install dependencies
+sudo eopkg install gjs libsoup libappindicator
+
+# Extract the deb package
+ar -x obmin_latest_all.deb && tar xf data.tar.xz
+# or you can use dpkg command
+dpkg -x obmin_latest_all.deb
+
+# Copy the extracted structure to /usr folder
+sudo cp -r ./usr /usr
+
+# Done
+```
 
 ## Installation from sources
+Here is how to get sources and compile it.
+```sh
+git clone git@github.com:konkor/obmin.git
+cd obmin
+./autogen.sh
+make
+
+# Make the extension package
+make zip-file
+
+# Make a dist source package
+make dist
+
+# Additionally you can build deb package like this
+./autogen.sh
+make
+make dist
+cd packaging
+./packaging.sh
+```
 
 ## Restarting Gnome Shell
 <p class="description">Different ways to restart or re-log current Gnome Shell session</p>
@@ -127,7 +179,7 @@ dconf reset -f "/org/gnome/shell/extensions/obmin/"
 
 ## Troubleshooting
 
-### Check system journal
+### Check a system journal
 
 ```sh
 # for current log
@@ -137,7 +189,7 @@ sudo journalctl
 sudo journalctl -f
 ```
 
-### [GitHub Issues Page](https://github.com/konkor/obmin/issues)
+### Check GitHub [Issues](https://github.com/konkor/obmin/issues)
 
 Check known issues on GitHub and if can't find the solution just report there.
 
