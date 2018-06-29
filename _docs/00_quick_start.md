@@ -8,7 +8,6 @@ If you already have a GJS environment installed (see Obmin's [dependencies](/doc
 ```sh
 # cd to uncompressed folder
 cd obmin@konkor
-
 # Run the server
 ./obmin-server
 
