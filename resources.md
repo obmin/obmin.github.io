@@ -1,15 +1,15 @@
 ---
-title: Resources
+title: Downloads
 permalink: /resources/
-description:  Project Downloads, Sources, Pages, Other External Links, and Resources.
+description:  Project Downloads, Sources, Pages, Other Useful Links, and Resources.
 layout: default
 ---
 
-# [DEB package](https://github.com/konkor/obmin/blob/master/releases/)
+# [DEB package](https://github.com/konkor/obmin/releases)
 <p class="description">Download the latest stable <b>deb</b> package for the complete system integration on GNU/Linux Debian/Ubuntu flavors.</p>
 <a href="https://github.com/konkor/obmin/raw/master/releases/obmin_latest_all.deb"><img src="{{ "/assets/images/debs.png" | relative_url }}" style="max-width:100%;max-height:43vh;width:auto;height:auto" title="Get latest deb package..." /></a>
 
-# [Gnome Extension Package](https://github.com/konkor/obmin/blob/master/releases/)
+# [Gnome Extension Package](https://github.com/konkor/obmin/releases)
 <p class="description">The latest Gnome extension package for Gnome Desktop environment.</p>
 <a href="https://github.com/konkor/obmin/raw/master/releases/obmin%40konkor.zip"><img src="{{ "/assets/images/zips.png" | relative_url }}" style="max-width:100%;max-height:43vh;width:auto;height:auto" title="Get latest gnome extension package..." /></a>
 
