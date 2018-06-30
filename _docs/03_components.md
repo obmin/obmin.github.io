@@ -104,5 +104,6 @@ OBMIN Gnome Extension is a monitor. It has the same functionality like OBMIN Ind
 ```sh
 obmin-extensions
 ```
+<p class="description">You can call the extension manager from the General Settings Page</p>
 OBMIN Server Extension's System is a powerful feature of the solution. It's easy to enhance, customize the server with server extensions and streamed pipelines. You could bring all power of Linux command line to your personal WEB server and utilize all your installed system packages. Later we will overview the OBMIN Extension Structure and look at a simple extension.
 <p><img src="{{ "/assets/images/docs/obmin_extensions.png" | relative_url }}" style="max-width:100%;max-height:60vh;width:auto;height:auto;margin:auto;"/><br><b>OBMIN Extensions Manager</b> A list of installed extensions.</p>

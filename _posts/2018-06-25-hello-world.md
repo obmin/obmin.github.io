@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome To The OBMIN Spot!"
+title:  "One year of development."
 date:   2018-06-25 15:00:00 +0200
 categories: obmin news
 description: "I'm a big fan of open-source software, community and platforms. I have developed many things but now I'm focused on a few my open-source projects for Linux desktop users. Linux have a lot of fun things but most of them are production oriented and supported by huge corporations and other businesses. We all are happy that we can use such things like production ready servers, containers, frameworks in our life. It's awesome to able to build dedicated servers just like big brothers at our homes. But it's not always efficient in daily life when you want just things be done time to time or just don't have time or resources to administrate or monitor it. It's why I started to develop own file server for ordinary desktop user needs. But it doesn't mean the Obmin server you cannot use for tasks in your office network or teams. The server part and user graphical tools for monitoring, configuration are in different layers. You can run the server part from command-line interface with defined in JSON file. So it's just weird to do not use all network power of Linux on desktops"
