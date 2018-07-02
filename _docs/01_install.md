@@ -92,7 +92,7 @@ sudo eopkg install gjs libsoup libappindicator
 # Extract the deb package
 ar -x obmin_latest_all.deb && tar xf data.tar.xz
 # or you can use dpkg command
-dpkg -x obmin_latest_all.deb
+dpkg -x obmin_latest_all.deb .
 
 # Copy the extracted structure to /usr folder
 sudo cp -r ./usr /usr
