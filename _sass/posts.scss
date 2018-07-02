@@ -1,3 +1,6 @@
+img {
+  max-width: 100%; }
+
 .post-list-heading {
   font-size: 28px; }
 
@@ -5,7 +8,8 @@
   margin-left: 0;
   list-style: none; }
   .post-list > li {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+ 	display:table-row;}
   .post-list > p {
     font-size: 14px;
     margin-bottom: 30px; }
