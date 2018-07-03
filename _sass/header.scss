@@ -5,10 +5,11 @@
   display: block;
   text-align: center;
   height: auto;
-  background-color: white;
+  background-color: #0f6bbb;
+  background:radial-gradient(circle,#1280e1 0%,#003f69 100%);
   padding: 15px;
   h1 {
-    color: #444444;
+    color: #fcfcfc;
     font-size: 28px;
     font-weight: normal;
   }
@@ -28,5 +29,5 @@
       font-size: 20px;
     }
   }
-  @include box-shadow(0 2px 4px 0 rgba(204, 204, 204, 0.4));
+  /*@include box-shadow(0 2px 4px 0 rgba(204, 204, 204, 0.4));*/
 }
