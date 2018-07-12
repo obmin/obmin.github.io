@@ -10,6 +10,8 @@
 @import 'footer';
 @import 'content';
 @import 'posts';
+@import 'slick';
+@import 'slick-theme';
 
 * {
   box-sizing: border-box;
@@ -61,6 +63,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   @media(max-width: 960px) {
+	padding: 10px;
     margin: auto;
     width: auto;
   }
@@ -129,5 +132,49 @@ code {
     padding: 1em;
     font-size: 14px;
     line-height: 1.75;
+  }
+}
+
+.slides {padding: 0;}
+.animation_slides .slick-dots {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  @media(max-width:880px){
+	  bottom: 20px;
+  }
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 700px;
+  margin: 20px auto;
+  @media(max-width:880px){
+    padding: 20px;
+    max-width: 400px;
+  }
+}
+
+.center {display:table;width:97%;text-align:center;vertical-align: top;}
+
+.col2 {width:49.9%;}
+.col3 {width:26.99999%;}
+.col4 {width:22.99999%;}
+.col4, .col3, .col2, .col1 {
+  padding: 15px;
+  display:table-cell;
+  @media(max-width:768px){
+	display:table-row;
+	width:97%;
+  }
+
+.button {
+	display: inline-block;
+	background-color: rgba (0,0,0,0.7);
   }
 }

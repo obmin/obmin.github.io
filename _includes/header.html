@@ -3,10 +3,11 @@
 <div class="topmenu">
   <div class="mainmenu">
   <div class="logo"><a href="{{ "/" | relative_url }}"><img alt="OBMIN" src="{{ "/assets/images/logo.png" | relative_url }}" title="OBMIN"></img></a></div>
+  <div class="logo-text"><a href="{{ "/" | relative_url }}" title="Private Secure File Server">OBMIN</a></div>
 
   <ul class="routes">
     <li><a href="{{ "/about" | relative_url }}" {% if active[1] == 'about' %}class="active"{% endif %}>Features</a></li>
-	<li><a href="{{ "/blog" | relative_url }}" {% if active[1] == 'blog' %}class="active"{% endif %}>Blog</a></li>
+    <li><a href="{{ "/blog" | relative_url }}" {% if active[1] == 'blog' %}class="active"{% endif %}>Blog</a></li>
     <li><a href="{{ "/explore" | relative_url }}" {% if active[1] == 'explore' %}class="active"{% endif %}>Explore</a></li>
     <li><a href="{{ "/docs/00_quick_start/" | relative_url }}" {% if active[1] == 'docs' %}class="active"{% endif %}>Documentation</a></li>
     <li><a href="{{ "/resources" | relative_url }}" {% if active[1] == 'resources' %}class="active"{% endif %}>Download</a></li>

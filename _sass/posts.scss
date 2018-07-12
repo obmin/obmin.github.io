@@ -7,6 +7,8 @@ img {
 .post-list {
   margin-left: 0;
   list-style: none; }
+  .post-list > ul {
+    margin-left: 8px;}
   .post-list > li {
     margin-bottom: 30px;
  	display:table-row;}

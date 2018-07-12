@@ -5,6 +5,7 @@ layout: documentation
 ---
 
 If you already have a GJS environment installed (see Obmin's [dependencies](/docs/01_install/#dependencies)), you can  download [latest zip package](https://github.com/konkor/obmin/raw/master/releases/obmin%40konkor.zip), unpack it and start the server just from Terminal:
+
 ```sh
 # cd to uncompressed folder
 cd obmin@konkor

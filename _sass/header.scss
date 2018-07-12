@@ -7,8 +7,114 @@
   height: auto;
   background-color: #0f6bbb;
   background:radial-gradient(circle,#1280e1 0%,#003f69 100%);
-  padding: 15px;
+  padding: 95px 15px 25px 15px;
+  &.title {
+    padding-top: 100px;
+    height: 600px;
+  }
+  .slide-container {
+    width: 100%;
+    color: white;
+    max-height: 30vh;
+  }
+  .slide-content {
+  max-width: 920px;
+  margin: auto;
+  text-align: left;
+  img {
+    max-width: 52%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    float: right;
+    margin-top: 28px;
+  }
+  @media(max-width: 880px) {
+    img {
+      float: none;
+      width: 100%;
+      max-height: 200px;
+      height: auto;
+      max-height: none;
+      margin-top: 12px;
+    }
+
+  }
+  }
+  .slide-content-row {
+  position: absolute;
+  top: 160px;
+  left: 23%;
+  a {
+    display: block;
+    padding: 8px 40px;
+    margin-top: 12px;
+    background-color: #00000047;
+    border-radius: 2px;
+    color: #fff;
+    min-width: 160px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    &:hover {background-color: #00000077;}
+    text-decoration: none;
+    @media(max-width:880px){
+      margin-top: 12px 32px 0 32px;
+    }
+    &.active {
+      background-color: #fff8;
+      &:hover {background-color: #fff5;}
+    }
+  }
+}
+  .fadetop {
+    animation: fadetop 1.5s 1;
+    /*animation-duration: 1s;
+    animation-name: fadeleft;
+    .fadetop {animation-name: fadetop;}
+    animation-iteration-count: 1;
+    animation-delay: 0s;*/
+  }
+  .fadeleft {
+    animation: fadeleft 2s 1;
+  }
+  .faderight {
+    animation: faderight 1.5s 1;
+    @media(max-width:880px){
+      animation: fadetop 1.5s 1;
+    }
+  }
+  @keyframes fadeleft {
+  from {
+    margin-left: 50px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+@keyframes fadetop {
+from {
+  margin-top: 50px;
+  opacity: 0.5;
+}
+to {
+  margin-top: 12px;
+  opacity: 1;
+}
+}
+@keyframes faderight {
+from {
+  margin-right: 50px;
+  opacity: 0;
+}
+to {
+  margin-right: 0;
+  opacity: 1;
+}
+}
+
   h1 {
+    margin: 18px auto;
     color: #fcfcfc;
     font-size: 28px;
     font-weight: normal;
@@ -24,10 +130,24 @@
       }
     }
   }
-  @media(max-width: 768px) {
+  @media(max-width: 880px) {
+    &.title {
+      height: 720px;
+    @media only screen and (orientation: portrait) {
+        height: 620px;
+    }
+      }
     h1 {
       font-size: 20px;
     }
+  .slide-content-row {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    top: inherit;
+    left: inherit;
+    text-align: center;
+  }
   }
   /*@include box-shadow(0 2px 4px 0 rgba(204, 204, 204, 0.4));*/
 }

@@ -5,13 +5,11 @@ description: Core features and abilities of the server.<br>GPL3 open-source, own
 layout: about
 ---
 
-# Friendly :)
-
-## Simple as a rocket
+# Simple as a rocket
 
 <img alt="" src="{{ "/assets/icons/rocket.png" | relative_url }}" align="left" style="margin:12px 48px 12px 0"> Just <b>one click</b> to begin a serving pages after a trivial installation. User-oriented graphical tools allow you to control all processes. Easy installation, configuration, using like just one single click. Obmin server is designed for using it without any special technology knowledge's needs. All has prepared and ready to run out of the box.
 
-## Graphical interface utilities
+# Friendly :)
 
 <img alt="" src="{{ "/assets/icons/easy.png" | relative_url }}" align="left" style="margin:12px 48px 12px 0"> There are many native GUI tools and utilities to configure, monitor, run, and analyze activity data for any kind of desktops. so friendly to users that are graphical tools for everything. You just have to press a start button and you are ready to go.
 

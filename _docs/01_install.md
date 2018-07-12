@@ -7,7 +7,10 @@ layout: documentation
 1. [Dependencies](#dependencies)
 1. [Gnome extensions](#gnome-extension-version)
 1. [Debian package](#debian-package)
-1. [Installation from sources](#source-archive)
+ * [Debian/Ubuntu flavors](#debianubuntu-flavors)
+ * [Non-Debian based distributions](#non-debian-based-distributions)
+1. [Installation from sources](#installation-from-sources)
+1. [Running without installation](#running-without-installation)
 1. [Restarting Gnome Shell](#restarting-gnome-shell)
 1. [Managing Extensions](#managing-extensions)
 1. [Upgrading the extension](#upgrading-the-extension)
@@ -107,20 +110,40 @@ git clone git@github.com:konkor/obmin.git
 cd obmin
 ./autogen.sh
 make
+sudo make install
 
+# Optionally, you can configure user local folder for the installation.
+./autogen.sh
+./configure --prefix=/home/USER/.local # REPLACE USER
+make
+make install
+
+# Additionally
 # Make the extension package
 make zip-file
 
 # Make a dist source package
 make dist
 
-# Additionally you can build deb package like this
+# Also, you can build deb package like this
 ./autogen.sh
 make
 make dist
 cd packaging
 ./packaging.sh
 ```
+
+## Running without installation
+<p class="description">You have to install the <a href="#dependencies">dependencies</a> first.</p>
+Unpack, clone the package and just run the applications from terminal.
+```sh
+# Just run
+./obmin-server
+
+# Run with custom configuration in JSON file format
+./obmin-server --config sample-config.json
+```
+See [Configuration Section](/docs/02_configuration#json-file-configuration) for more information about JSON file config.
 
 ## Restarting Gnome Shell
 <p class="description">Different ways to restart or re-log current Gnome Shell session</p>
