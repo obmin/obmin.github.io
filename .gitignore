@@ -1,7 +1,11 @@
 *~
+*.orig
+*.bak
 _site
 .sass-cache
 art
+back
+vendor
 .jekyll-metadata
 /.bundle/
 /Gemfile.lock
