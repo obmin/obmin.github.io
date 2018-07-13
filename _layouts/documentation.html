@@ -30,6 +30,8 @@
         });
       };
       window.onscroll = function() {
+        var routes = document.querySelector('.routes');
+        if (!routes.visible) return;
         var sidebar = document.querySelector(".sidebar");
         //console.log (JSON.parse(JSON.stringify(window.pageYOffset + " >= " + sticky)));
         var sticky = 75 - window.pageYOffset;
