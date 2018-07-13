@@ -9,7 +9,7 @@
       </div>
         {% include sidebar.html %}
         <div class="container_docs">
-          <div class="content">
+          <div class="content" style="padding-top:12px">
             <div>
               <h1>{{ page.title | escape }}</h1>
             </div>
@@ -28,16 +28,17 @@
           e.preventDefault()
           routes.classList.toggle('open')
         });
-      };
-      window.onscroll = function() {
-        var routes = document.querySelector('.routes');
-        if (!routes.visible) return;
+      }
+      window.onscroll = check_padding;
+      window.onresize = check_padding;
+      function check_padding() {
+        var sticky = 75 - window.pageYOffset;
+        if (window.innerWidth < 881) sticky = 0;
         var sidebar = document.querySelector(".sidebar");
         //console.log (JSON.parse(JSON.stringify(window.pageYOffset + " >= " + sticky)));
-        var sticky = 75 - window.pageYOffset;
         if (sticky < 0) sticky = 0;
         sidebar.style.padding = sticky + "px 0 0 0";
-      };
+      }
     </script>
   </body>
 </html>
