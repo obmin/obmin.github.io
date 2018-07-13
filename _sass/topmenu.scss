@@ -14,14 +14,14 @@
     vertical-align: middle;
     display: table;
     @media(max-width: 880px) {
-      margin-left: 5px;
+      margin: 3px 0 0 5px;
       width: 95%;
     }
   }
   .menu-icon {
     position: absolute;
     right: 15px;
-    top: 5px;
+    top: 10px;
     padding: 15px;
     display: none;
     z-index: 100;
