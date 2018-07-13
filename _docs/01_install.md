@@ -23,7 +23,6 @@ If you have Gnome Desktop, you already have all requirements installed probably.
 
 * gjs (core dependency)
 * GTK3 libraries:
- * gir1.2-atk-1.0
  * gir1.2-glib-2.0
  * gir1.2-gtk-3.0
  * gir1.2-soup-2.4
@@ -36,7 +35,10 @@ Debian/Ubuntu flavors can do next:
 
 ```sh
 sudo apt-get update
-sudo apt-get install gjs gir1.2-atk-1.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-soup-2.4 psmisc curl gir1.2-appindicator3
+sudo apt-get -y install gjs gir1.2-atk-1.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-soup-2.4 psmisc curl gir1.2-appindicator3
+
+# Building dependencies (optional)
+sudo apt-get -y install make automake autotools-dev build-essential gnome-common libglib2.0-dev git
 ```
 
 ## Gnome extension version
@@ -104,6 +106,7 @@ sudo cp -r ./usr /usr
 ```
 
 ## Installation from sources
+<p class="description">Install all <a href="#dependencies">dependencies</a> to able compile it.</p>
 Here is how to get sources and compile it.
 ```sh
 git clone git@github.com:konkor/obmin.git
@@ -117,8 +120,10 @@ sudo make install
 ./configure --prefix=/home/USER/.local # REPLACE USER
 make
 make install
+```
 
-# Additionally
+Optionally, here are steps to build deb, gnome zip and sources tarball packages.
+```sh
 # Make the extension package
 make zip-file
 
