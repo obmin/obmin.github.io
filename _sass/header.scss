@@ -8,9 +8,13 @@
   background-color: #0f6bbb;
   background:radial-gradient(circle,#1280e1 0%,#003f69 100%);
   padding: 95px 15px 25px 15px;
+  color: #fff;
   &.title {
     padding-top: 100px;
     height: 600px;
+  }
+  &.band {
+    padding-top: 25px;
   }
   .slide-container {
     width: 100%;
