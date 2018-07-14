@@ -6,7 +6,8 @@ layout: default
 
   <div class="post-content">
 	<div class="post-meta"> <b> {{ page.author }} </b> Updated {{ page.date | date_to_long_string }}</div>
-    {{ content }}
+  {{ content }}
+  {% include share.html %}
 	{% if page.comments %}
 	<div id="disqus_thread"></div>
 	<script>
