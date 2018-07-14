@@ -206,3 +206,10 @@ code {
 .cards-margin {
   padding: 8px;
 }
+
+.open-popup-tube {
+  &:hover {
+    -webkit-filter: sepia(0.5);
+    filter: sepia(0.5);
+  }
+}

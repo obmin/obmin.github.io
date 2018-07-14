@@ -47,13 +47,14 @@ $('#animation_slides .slides').on('beforeChange', function(e, slick, currentSlid
 });
 
 $('#animation_slides .slides').slick({
-    autoplay: true,
-    autoplaySpeed: 10000,
-    dots: true,
-    fade: true,
-	speed: 1000,
-    arrows: false
-  });
+  autoplay: true,
+  autoplaySpeed: 10000,
+  dots: true,
+  fade: true,
+  speed: 1000,
+  arrows: false
+});
+
 function doAnimations(elements) {
   var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
   elements.each(function() {
@@ -67,5 +68,24 @@ function doAnimations(elements) {
 
 $('.open-popup-link').magnificPopup({
   type:'inline',
-  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  midClick: true
+});
+
+$('.open-popup-tube').magnificPopup({
+  type:'iframe',
+  iframe: {
+    markup: '<div class="mfp-iframe-scaler">'+
+            '<div class="mfp-close"></div>'+
+            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+            '</div>',
+    patterns: {
+      youtube: {
+        index: 'youtube.com/',
+        id: 'v=',
+        src: '//www.youtube.com/embed/%id%'
+      }
+    },
+    srcAction: 'iframe_src',
+  },
+  midClick: true
 });
