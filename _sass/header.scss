@@ -13,6 +13,18 @@
     padding-top: 100px;
     height: 600px;
   }
+  &.banner {
+    padding: 18px 24px 36px 24px;
+    background:radial-gradient(ellipse at top, #215d9c, #000);
+    /*background:#E9410C;*/
+    height: auto;
+    h2, a {
+      color: #fff;
+    }
+    &:hover {
+      background:#215d9c;
+    }
+  }
   &.band {
     padding-top: 25px;
   }
@@ -137,10 +149,13 @@ to {
   @media(max-width: 880px) {
     &.title {
       height: 720px;
-    @media only screen and (orientation: portrait) {
+      @media only screen and (orientation: portrait) {
         height: 620px;
-    }
       }
+    }
+    &.banner {
+      height: auto;
+    }
     h1 {
       font-size: 20px;
     }
