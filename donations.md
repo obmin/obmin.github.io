@@ -11,16 +11,26 @@ OBMIN Server is an GPLv3-licensed open source project focused on desktop users. 
 
 Please, consider to support the project and make it better!
 
-<h3 align="center">Special Sponsors</h3>
-<!--special start-->
-
 <p align="center">
   <big>
-    Top 5 supporters could be here with your name or logo and reference.
-    <br><br>
-    <i>Also the one top will be placed in GUI like 'Sponsored by ...' while there's no one real sponsor!</i>
+    Top supporters:<br><br><b>
+    <a href="{{ "/supporters" | relative_url }}">Jonathan Alden</a><br>
+    <a href="{{ "/supporters" | relative_url }}">Manuel Transfeld</a><br>
+    <br></b>
+    <a href="{{ "/supporters" | relative_url }}">Joël Dinel</a><br>
+    <a href="{{ "/supporters" | relative_url }}">Michel Bonifert</a><br>
+    <a href="{{ "/supporters" | relative_url }}">Patrick Strobel</a><br>
+    <br>
+    Patreons:<br><br>
+    <a href="https://github.com/krzemienski">Nick Krzemienski (USA)</a><br>
+    <a href="https://vk.com/anaumynaugames">Ivan Chayka (Russia)</a><br>
+    <a href="{{ "/supporters" | relative_url }}">Steffen W. (Germany)</a><br>
+    <a href="{{ "/supporters" | relative_url }}">Yoann Deferi (France)</a><br>
+    <br>
+    <a href="{{ "/supporters" | relative_url }}">More wonderful people...</a><br>
+    <br>
+    <i>The one top will be placed in UI like 'Sponsored by ...' you could be here with your name or logo and reference (contact me or put links in donation's messages)</i>
   </big>
-  <br><i>Top sponsors will be updated in the beginning of every month.</i>
 </p>
 
 <!--special end-->
@@ -33,7 +43,7 @@ Please, consider to support the project and make it better!
 - [Become a backer or sponsor on Patreon](https://www.patreon.com/konkor)
 - One-time donation via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HGAFMMMQ9MQJ2) or [Patreon](https://www.patreon.com/konkor) where you can choose a custom pledge
 
-<h3 align="center"><a href="{{ "/sponsors" | relative_url }}" align="center">Our Sponsors!</a></h3>
+<h3 align="center"><a href="{{ "/supporters" | relative_url }}" align="center">Our Supporters!</a></h3>
 -
 
 **Thank You for your supporting!**
